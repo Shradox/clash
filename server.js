@@ -1,6 +1,6 @@
 /**
  * ARENA WARS — Game Server v2
- * npm install ws  →  node server.js  →  http://localhost:3000
+ * npm install ws  →  node server.js  →  http://localhost:10000
  */
 'use strict';
 
@@ -18,7 +18,7 @@ try {
   ));
 }
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 const TICK_MS          = 33;   // ~30 Hz
 const GAME_DURATION    = 180;  // seconds
 const OVERTIME_DUR     = 60;   // seconds
