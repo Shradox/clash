@@ -541,7 +541,7 @@ function clearSel(){G.selIdx=-1;document.getElementById('hint').style.display='n
 
 // ─── CLICK TO PLACE ──────────────────────────────────────────
 const RC=new THREE.Raycaster();
-const GP=new THREE.Plane(new THREE.Vector3(0,1,0),0);
+const GP=new THREE.Plane(new THREE.Vector3(0,1,0),-0.5);
 canvas.addEventListener('click',e=>{
   if(G.selIdx<0||!G.inGame)return;
   const rect=canvas.getBoundingClientRect();
